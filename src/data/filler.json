@@ -1,0 +1,29 @@
+[
+        {
+            "contract" : 1000920,
+            "year" : 2018,
+            "usage type" : "SC Annual",
+            "allocated" : 5000,
+            "remaining": 1000,
+            "start date": "01/01/2018",
+            "end date" : "12/31/2018"
+        },
+        {
+            "contract" : 1000920,
+            "year" : 2019,
+            "usage type" : "SC Bank",
+            "allocated" : 2000,
+            "remaining": 0,
+            "start date": "01/01/2019",
+            "end date" : "12/31/2019"
+        },
+        {
+            "contract" : "PB*1234*01*B",
+            "year" : 2018,
+            "usage type" : "CPOP Annual",
+            "allocated" : 1575,
+            "remaining": 0,
+            "start date": "01/01/2018",
+            "end date" : "12/31/2018"
+        }
+]

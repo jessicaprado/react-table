@@ -6,27 +6,33 @@ interface Props {
 
 class Header extends React.Component<Props> {
     constructor(props: Props ) {
-        super(props)
-        
+        super(props)  
     }
+    
 
     render() {
         const {fillerData} = this.props;
-        const headerTitles = Object.values(fillerData);
-        console.log(headerTitles)
-
+      
         return (
             <thead>
                 {fillerData.map((header, i) => {
                     return (
-                        <tr key={i}>
-                            <th>{headerTitles[i]}</th>
+                        <tr key={i}>    
+                            {(Object.keys(header)).filter(function(item, pos) {
+                                return pos
+                            })}
                         </tr>
                     )
-                })}
+                })
+                    
+                }
             </thead>
         )
     }
 }
+
+// uniqueArray = a.filter(function(item, pos) {
+//     return a.indexOf(item) == pos;
+// })
 
 export default Header
